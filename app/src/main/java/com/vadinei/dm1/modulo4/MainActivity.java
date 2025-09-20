@@ -33,21 +33,15 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadContatos() {
         final ContadoDAO contadoDAO = new ContadoDAO(this);
-        // final List<Contato> contatos = contadoDAO.listar();
-        final List<Contato> contatos = fakeContatos();
+        final Contato c1 = new Contato(1, "Contato 01");
+        final Contato c2 = new Contato(2, "Contato 02");
+        final Contato c3 = new Contato(3, "Contato 03");
+        contadoDAO.inserir(c1);
+        contadoDAO.inserir(c2);
+        contadoDAO.inserir(c3);
+        final List<Contato> contatos = contadoDAO.listar();
         final ContatoAdapter contatoAdapter = new ContatoAdapter(contatos, this);
         final ListView lvContatos = findViewById(R.id.lvContatos);
         lvContatos.setAdapter(contatoAdapter);
-    }
-
-    private List<Contato> fakeContatos() {
-        final Contato c1 = new Contato(1, "Contato 01");
-        final Contato c2 = new Contato(1, "Contato 02");
-        final Contato c3 = new Contato(1, "Contato 03");
-        final List<Contato> contatos = new ArrayList<>();
-        contatos.add(c1);
-        contatos.add(c2);
-        contatos.add(c3);
-        return contatos;
     }
 }

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">dm1-modulo4</string>
     <string name="meus_contatos">Meus Contatos</string>
+    <string name="inserir_contato">Inserir Contato</string>
+    <string name="digite_nome_contato">Digite o nome do contato</string>
+    <string name="manter_contato">Manter Contato</string>
 </resources>

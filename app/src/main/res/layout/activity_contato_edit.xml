@@ -5,38 +5,41 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ContatoEditActivity">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="16dp"
+        android:gravity="center_vertical"
         android:orientation="vertical"
+        android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tvTituloContatoEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/meus_contatos"
+            android:text="@string/manter_contato"
             android:textAlignment="center"
-            android:textSize="34sp" />
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etNomeContatoEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:hint="@string/digite_nome_contato"
+            android:inputType="text" />
 
         <Button
-            android:id="@+id/btInserirContatoMain"
+            android:id="@+id/btInserirContatoEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/inserir_contato" />
-
-        <ListView
-            android:id="@+id/lvContatos"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp" />
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
