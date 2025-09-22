@@ -25,6 +25,10 @@ public class ContadoDAO {
         db.insert(DbHelper.TABLE_CONTATOS_NAME, null, values);
     }
 
+    public void limpar() {
+        db.delete(DbHelper.TABLE_CONTATOS_NAME, null, null);
+    }
+
     public List<Contato> listar() {
         final List<Contato> contatos = new ArrayList<>();
         final Cursor cursor = db.query(DbHelper.TABLE_CONTATOS_NAME,

@@ -22,9 +22,9 @@
             android:id="@+id/tvTituloContatoEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/manter_contato"
+            android:text="@string/cadastro_contato"
             android:textAlignment="center"
-            android:textSize="20sp" />
+            android:textSize="28sp" />
 
         <EditText
             android:id="@+id/etNomeContatoEdit"
@@ -34,12 +34,20 @@
             android:layout_marginBottom="20dp"
             android:ems="10"
             android:hint="@string/digite_nome_contato"
-            android:inputType="text" />
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btInserirContatoEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/inserir_contato" />
+
+        <Button
+            android:id="@+id/btVoltarContatoEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/voltar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
