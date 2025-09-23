@@ -23,6 +23,11 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    /**
+     * Utilizando um ActivityResultLauncher, para sincronizar a lista de contatos,
+     * ao criar um novo contato.
+     * Fonte: https://developer.android.com/training/basics/intents/result?hl=pt-br#java
+     */
     private ActivityResultLauncher<Intent> launcher;
 
     @Override
